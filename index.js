@@ -53,7 +53,7 @@ const questions = [
     //LICENSING
     {
         type: 'checkbox',
-        name: 'licensing',
+        name: 'license',
         message: 'Choose a license for this project: (Optional)',
         choices: [
 
@@ -78,7 +78,7 @@ const questions = [
     //TESTING
     {
         type: 'input',
-        name: 'testing',
+        name: 'test',
         message: 'Please include applicable testing instructions. (Optional)'
     },
 
