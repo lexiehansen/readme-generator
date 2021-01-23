@@ -51,7 +51,7 @@ function promptUser(){
     {
         type: 'input',
         name: 'usage',
-        message: 'What is this project used for? (Optional)'
+        message: 'Please include applicable usage instructions. (Optional)'
     },
 
     //LICENSING
