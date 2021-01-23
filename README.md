@@ -10,19 +10,21 @@
   * [Contributors](#contributors)
   * [Contact](#contact)
   
-  ##Installation
+  ## Installation
   Clone or download this repository.
 
-  ##Usage
+  ## Usage
   Once cloned, run the command 'node index' in the command line. Answer each question as prompted, and a new file named 'generatedREADME' will populate. 
 
-  ##License
+  ## License
   MIT
 
-  ##Contributors
+  ## Contributors
   Lexie Hansen
 
-  ##Contact
+  ## Contact
   Feel free to reach out to me if you have any questions. 
+  </br>
   Email: [lexiebhansen@gmail.com](mailto:lexiebhansen@gmail.com)
+  </br>
   GitHub: [lexiehansen](https://github.com/lexiehansen)

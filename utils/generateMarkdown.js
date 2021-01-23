@@ -26,24 +26,26 @@ function generateMarkdown(data) {
   * [Tests](#tests)
   * [Contact](#contact)
   
-  ##Installation
+  ## Installation
   ${data.installation}
 
-  ##Usage
+  ## Usage
   ${data.usage}
 
-  ##License
+  ## License
   ${data.license}
 
-  ##Contributors
+  ## Contributors
   ${data.contributors}
 
-  ##Tests
+  ## Tests
   ${data.test}
 
-  ##Contact
+  ##  Contact
   Feel free to reach out to me if you have any questions. 
+  </br>
   Email: [${data.email}](mailto:${data.email})
+  </br>
   GitHub: [${data.github}](https://github.com/${data.github})
 `;
 }
