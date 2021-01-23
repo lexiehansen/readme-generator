@@ -1,10 +1,14 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown")
+const util = require("util");
+const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
-const questions = [
+
+// Array of questions for user input
+function promptUser(){
+    return inquirer.prompt([
     
     //TITLE
     {
@@ -56,7 +60,12 @@ const questions = [
         name: 'license',
         message: 'Choose a license for this project: (Optional)',
         choices: [
-
+			'GNU',
+			'Mozilla',
+			'Apache',
+			'MIT',
+			'Other',
+			'None',
         ]
     },
 
@@ -111,13 +120,17 @@ const questions = [
           }
         }
     },
-];
+    
+    ]);
+} 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
+// Function to write README file/initialize app
+async function init() {
+    const userInput = await promptUser();
+    const generateContent = generateMarkdown(userInput);
+    await writeFileAsync('./generatedREADME.md', generateContent);
+        console.log('Congrats! Your README is available as generatedREADME.md!');
+}
 
 // Function call to initialize app
 init();
