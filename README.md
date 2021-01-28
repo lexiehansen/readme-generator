@@ -15,6 +15,7 @@
 
   ## Usage
   Once cloned, run the command 'node index' in the command line. Answer each question as prompted, and a new file named 'generatedREADME' will populate. 
+  [Click here for a walkthrough video](https://youtu.be/6hdXOjFVwgE)
 
   ## License
   MIT
